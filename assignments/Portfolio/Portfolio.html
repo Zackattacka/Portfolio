@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style media="screen">
+      body {
+        background-color:#123524;
+        margin:0;
+      }
+      #ZacVetter {
+        color:#daa520;
+        text-align:center;
+        padding: 16px;
+        margin-top: 30px;
+        height: 1100px;
+      }
+      #GD {
+        color:#daa520;
+        text-align:center;
+        height:900px;
+      }
+      #Photo {
+        color:#daa520;
+        text-align:center;
+        height:900px;
+      }
+      #Vid {
+        color:#daa520;
+        text-align:center;
+        height:900px;
+      }
+      #AP {
+        color:#daa520;
+        text-align:center;
+        height:900px;
+      }
+      ul {
+        font-size:1em;
+        list-style:none;
+        text-align:left;
+      }
+
+      .navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .navbar a:hover {
+    background: #ddd;
+    color: black;
+  }
+
+  #images {
+    -webkit-transform:rotate(270deg);
+    transform:rotate(270deg);
+  }
+    </style>
+    <script>
+      $('ul.navbar-nav>li').find('a').click(function(){
+          var $href = $(this).attr('href');
+          var $anchor = $('#'+$href).offset();
+          $('body').animate({ scrollTop: $anchor.top },1000);
+          return false;
+      });
+    </script>
+    <meta charset="utf-8">
+    <title>Zac Vetter</title>
+  </head>
+  <body>
+
+    <div class="navbar">
+      <a href="#home">Home</a>
+      <a href="#graphics">Graphic Design</a>
+      <a href="#photos">Photography</a>
+      <a href="#Video">Videography</a>
+      <a href="Audio">Audio Production</a>
+    </div>
+
+    <div id="ZacVetter">
+      <h1><span style="font-size:3em;">Zac Vetter</span>
+        <hr>Graphic Design
+        <br>Photography
+        <br>Videography
+        <br>Audio Production
+      </h1>
+    </div>
+
+    <br />
+    <br />
+
+    <div id="GD">
+      <h2>Graphic Design</h2>
+      <br />
+      <ul>
+        <li>Logo Design</li>
+        <li>Logo Animation</li>
+        <li>Motion Graphics</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+      </ul>
+    </div>
+
+    <br />
+    <br />
+
+    <div id="Photo">
+      <h2>Photography</h2>
+      <br />
+      <ul>
+        <li>Digital</li>
+        <li>Film</li>
+        <li>Portrait</li>
+        <li>Landscape</li>
+        <li>Event</li>
+        <li>Concert</li>
+      </ul>
+    </div>
+
+    <div id="images">
+      <img src="Images/Kermit_1.jpg" alt="Kermit Film">
+    </div>
+
+    <br />
+    <br />
+
+    <div id="Vid">
+      <h2>Videography</h2>
+      <br />
+      <ul>
+        <li>Script Writing</li>
+        <li>Storyboarding</li>
+        <li>Directing</li>
+        <li>Camera Operation</li>
+        <li>Location Sound</li>
+        <li>Post Production</li>
+      </ul>
+    </div>
+
+    <br />
+    <br />
+
+    <div id="AP">
+      <h2>Audio Production</h2>
+      <br />
+      <ul>
+        <li>Mixing</li>
+        <li>Mastering</li>
+        <li>Recording</li>
+        <li>Stage Lighting</li>
+        <li>Event Setup</li>
+        <li>Sound Design</li>
+      </ul>
+    </div>
+
+
+  </body>
+</html>
