@@ -1,0 +1,91 @@
+body {
+  background-color:#123524;
+  margin:0;
+  padding: 0;
+}
+header {
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 300;
+  background-color: #ffffff;
+}
+h2 {
+  font-size: 4em;
+}
+#ZacVetter {
+  color:#daa520;
+  text-align:center;
+  padding: 16px;
+  margin-top: 30px;
+}
+#GD {
+  color:#daa520;
+  text-align:center;
+}
+#Photo {
+  color:#daa520;
+  text-align:center;
+}
+#Vid {
+  color:#daa520;
+  text-align:center;
+  position: relative;
+}
+#AP {
+  color:#daa520;
+  text-align:center;
+}
+ul {
+  font-size:1em;
+  list-style:none;
+  text-align:center;
+  font-size:2em;
+}
+ul li {
+  display: inline;
+  padding-right: 20px;
+}
+
+.navbar {
+overflow: hidden;
+background-color: #333;
+position: fixed;
+top: 0;
+width: 100%;
+z-index: 300;
+}
+
+.navbar a {
+float: left;
+display: block;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+
+.navbar a:hover {
+background: #ddd;
+color: black;
+}
+.toggle, [id^=drop] {
+display: none;
+}
+
+.container {
+margin-top: 110px; /* height of header */
+padding-bottom: 600px; /*for jsbin testing, need to make the page longer*/
+}
+
+.imgHolder{
+transform: rotate(270deg);
+float: right;
+margin: auto 7px;
+}
+
+.imgHolder img {
+flex: 1;
+}

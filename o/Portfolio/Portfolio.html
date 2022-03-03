@@ -1,72 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <style media="screen">
-      body {
-        background-color:#123524;
-        margin:0;
-      }
-      #ZacVetter {
-        color:#daa520;
-        text-align:center;
-        padding: 16px;
-        margin-top: 30px;
-        height: 1100px;
-      }
-      #GD {
-        color:#daa520;
-        text-align:center;
-        height:900px;
-      }
-      #Photo {
-        color:#daa520;
-        text-align:center;
-        height:900px;
-      }
-      #Vid {
-        color:#daa520;
-        text-align:center;
-        height:900px;
-      }
-      #AP {
-        color:#daa520;
-        text-align:center;
-        height:900px;
-      }
-      ul {
-        font-size:1em;
-        list-style:none;
-        text-align:left;
-      }
-
-      .navbar {
-    overflow: hidden;
-    background-color: #333;
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-
-  .navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-
-  .navbar a:hover {
-    background: #ddd;
-    color: black;
-  }
-
-  #images {
-    -webkit-transform:rotate(270deg);
-    transform:rotate(270deg);
-  }
-    </style>
+  <link rel="stylesheet" href="Portfolio_CSS.css">
     <script>
       $('ul.navbar-nav>li').find('a').click(function(){
           var $href = $(this).attr('href');
@@ -79,17 +14,19 @@
     <title>Zac Vetter</title>
   </head>
   <body>
-
-    <div class="navbar">
-      <a href="#home">Home</a>
-      <a href="#graphics">Graphic Design</a>
-      <a href="#photos">Photography</a>
-      <a href="#Video">Videography</a>
-      <a href="Audio">Audio Production</a>
-    </div>
+    <header>
+      <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#graphics">Graphic Design</a>
+        <a href="#photos">Photography</a>
+        <a href="#Video">Videography</a>
+        <a href="Audio">Audio Production</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </header>
 
     <div id="ZacVetter">
-      <h1><span style="font-size:3em;">Zac Vetter</span>
+      <h1><span style="font-size:5em;">Zac Vetter</span>
         <hr>Graphic Design
         <br>Photography
         <br>Videography
@@ -129,8 +66,11 @@
       </ul>
     </div>
 
-    <div id="images">
-      <img src="Images/Kermit_1.jpg" alt="Kermit Film">
+    <div class="container" style="position:relative;top:-400px;">
+      <div class="imgHolder">
+        <img class="img2" src="Images/Disney_1.jpg" alt="Disney Film">
+        <img class="img1" src="Images/Kermit_1.jpg" alt="Kermit Film">
+      </div>
     </div>
 
     <br />
@@ -166,5 +106,5 @@
     </div>
 
 
-  </body>
+</body>
 </html>
