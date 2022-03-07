@@ -1,0 +1,14 @@
+body {
+  background-color: #123524;
+}
+
+.card {
+  background-color: #cccc00;
+  border-radius: 24px;
+  box-shadow: 10px 10px 12px 4px #daa520;
+  color:#123524;
+  margin:24px;
+  margin-bottom: 48px;
+  padding:36px;
+  text-align:center;
+}
