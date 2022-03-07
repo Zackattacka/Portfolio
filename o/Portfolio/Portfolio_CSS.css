@@ -27,11 +27,14 @@ h2 {
 #Photo {
   color:#daa520;
   text-align:center;
+  position:relative;
+  top:20px;
 }
 #Vid {
   color:#daa520;
   text-align:center;
   position: relative;
+  top: -400px;
 }
 #AP {
   color:#daa520;
@@ -76,8 +79,8 @@ display: none;
 }
 
 .container {
-margin-top: 110px; /* height of header */
-padding-bottom: 600px; /*for jsbin testing, need to make the page longer*/
+margin-top: 110px;
+padding-bottom: 600px;
 }
 
 .imgHolder{
@@ -88,4 +91,25 @@ margin: auto 7px;
 
 .imgHolder img {
 flex: 1;
+}
+
+.imgHolder2 {
+  float:left;
+  margin:auto 7px;
+}
+
+.imgHolder2 img {
+  flex:1;
+}
+
+#demo {
+  position:relative;
+  top:-600px;
+}
+
+.center {
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
