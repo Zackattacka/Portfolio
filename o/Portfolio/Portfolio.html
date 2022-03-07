@@ -2,35 +2,23 @@
 <html lang="en" dir="ltr">
   <head>
   <link rel="stylesheet" href="Portfolio_CSS.css">
-    <script>
-      $('ul.navbar-nav>li').find('a').click(function(){
-          var $href = $(this).attr('href');
-          var $anchor = $('#'+$href).offset();
-          $('body').animate({ scrollTop: $anchor.top },1000);
-          return false;
-      });
-    </script>
     <meta charset="utf-8">
     <title>Zac Vetter</title>
   </head>
   <body>
     <header>
       <div class="navbar">
-        <a href="#home">Home</a>
-        <a href="#graphics">Graphic Design</a>
-        <a href="#photos">Photography</a>
-        <a href="#Video">Videography</a>
-        <a href="Audio">Audio Production</a>
+        <a href="#ZacVetter">Home</a>
+        <a href="#GD">Graphic Design</a>
+        <a href="#Photo">Photography</a>
+        <a href="#Vid">Videography</a>
+        <a href="#AP">Audio Production</a>
         <a href="#contact">Contact</a>
       </div>
     </header>
 
     <div id="ZacVetter">
-      <h1><span style="font-size:5em;">Zac Vetter</span>
-        <hr>Graphic Design
-        <br>Photography
-        <br>Videography
-        <br>Audio Production
+      <h1><span style="font-size:5em;border-bottom:solid;">Zac Vetter</span>
       </h1>
     </div>
 
@@ -49,11 +37,25 @@
         <li>Javascript</li>
       </ul>
     </div>
+
     <div class="container">
       <div class="imgHolder2">
-        <img style="max-width: 725px;" src="Images/TD_1.jpg" alt="Tokyo Drifter Poster 1">
-        <img style="max-width: 737px; position:relative; top:1px;" src="Images/WoaW.png" alt="World on a Wire Poster">
-        <img style="max-width: 725px;" src="Images/TD_2.jpg" alt="Tokyo Drifter Poster 2">
+
+        <img
+        style="max-width: 725px;"
+        src="Images/TD_1.jpg"
+        alt="Tokyo Drifter Poster 1">
+
+        <img
+          style="max-width: 737px;
+          position:relative; top:1px;"
+          src="Images/WoaW.png"
+          alt="World on a Wire Poster">
+
+        <img style="max-width: 725px;"
+        src="Images/TD_2.jpg"
+        alt="Tokyo Drifter Poster 2">
+
       </div>
     </div>
 
@@ -115,9 +117,42 @@
       </ul>
     </div>
 
-    <a href="https://open.spotify.com/show/22XXp4YLPgWL9hUYZNlxJh?si=f266fc42e4cf4bac" target="_blank">
+    <a href="https://open.spotify.com/show/22XXp4YLPgWL9hUYZNlxJh?si=f266fc42e4cf4bac"
+      target="_blank">
+
       <img src="Images/Purple_noon.jpeg" class="center">
+      
     </a>
+
+    <div id="contact">
+      <form action="action_page.php">
+
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+          <option value="moon">The Moon</option>
+        </select>
+
+        <label for="subject">Subject</label>
+        <textarea
+          id="subject"
+          name="subject"
+          placeholder="Write something.."
+          style="height:200px">
+        </textarea>
+
+        <input type="submit" value="Submit">
+
+      </form>
+    </div>
 
 
 </body>
