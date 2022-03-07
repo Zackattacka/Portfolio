@@ -19,6 +19,11 @@ HTML {
   scroll-behavior: smooth;
 }
 
+.hidden-anchor {
+  position:absolute;
+  top: -100px;
+}
+
 #ZacVetter {
   color:#daa520;
   text-align:center;
