@@ -47,6 +47,15 @@ ul li {
   padding-right: 20px;
 }
 
+#beodog {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:100%;
+  height: 30%;
+  overflow: hidden;
+}
+
 .navbar {
 overflow: hidden;
 background-color: #333;
