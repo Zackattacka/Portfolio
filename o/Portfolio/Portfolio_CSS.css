@@ -47,11 +47,11 @@ ul li {
   padding-right: 20px;
 }
 
-#beodog {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width:80%;
+#banner {
+  width:100%;
+  border-style:inset;
+  border-width: 0px;
+  border-color: black;
 }
 
 .navbar {
@@ -88,7 +88,7 @@ padding-bottom: 600px;
 
 .imgHolder{
 transform: rotate(270deg);
-float: right;
+float: left;
 margin: auto 7px;
 }
 
@@ -157,20 +157,20 @@ input[type=submit]:hover {
 
 .divgroup_1 {
   position: relative;
-  top:800px;
+  top:400px;
 }
 
 .divgroup_2 {
   position: relative;
-  top:900px;
+  top:700px;
 }
 
 .divgroup_3 {
   position: relative;
-  top:500px;
+  top:300px;
 }
 
 .divgroup_4 {
   position: relative;
-  top:500px;
+  top:550px;
 }
