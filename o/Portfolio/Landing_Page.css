@@ -1,0 +1,60 @@
+body {
+  background: #123524;
+}
+#outerCircle {
+  animation-name: color-change;
+  animation-duration:3s;
+  height:500px;
+  width:500px;
+  border-radius:50%;
+  position:relative;
+  background-color: #ffd700;
+  transform:translateY(50%);
+}
+#innerCircle {
+    height:400px;
+    width:400px;
+    border-radius:50%;
+    position:absolute;
+    background-color: #123524;
+    top:50%;
+    left:50%;
+    margin: -200px 0px 0px -200px;
+}
+
+#circle {
+  /* margin-left:25%; */
+  animation-name: slider;
+  animation-duration:3s;
+  animation-delay: 0s;
+  animation-fill-mode:forwards;
+}
+
+#name {
+  animation-name: fadeIn;
+  animation-duration: 5s;
+  animation-delay: 0s;
+  margin-left:50%;
+  font-size: 80px;
+}
+#link {
+  text-decoration:none;
+  color: #ffd700;
+}
+
+@keyframes slider {
+  0% { transform:translateX(0%);}
+  25% { transform:translateX(0%);}
+  100% {transform:translateX(25%);}
+}
+
+@keyframes color-change {
+  0% { background-color: #123524;}
+  100% { background-color: #ffd700;}
+}
+
+@keyframes fadeIn {
+  0% { opacity:0;}
+  50% { opacity:0;}
+  100% {opacity: 1;}
+}
