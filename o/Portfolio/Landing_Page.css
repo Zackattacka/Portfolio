@@ -21,6 +21,15 @@ body {
     left:50%;
     margin: -200px 0px 0px -200px;
 }
+#portfolio {
+  animation-name:fadeInTwo;
+  animation-duration:5s;
+  font-size: 30px;
+  position:absolute;
+  margin-left:31.5%;
+  margin-top:19%;
+  z-index:3;
+}
 
 #circle {
   /* margin-left:25%; */
@@ -39,6 +48,10 @@ body {
   transform:translateY(-25%);
 }
 #link {
+  text-decoration:none;
+  color: #ffd700;
+}
+#link2 {
   text-decoration:none;
   color: #ffd700;
 }
@@ -64,6 +77,12 @@ body {
 }
 
 @keyframes fadeIn {
+  0% { opacity:0;}
+  50% { opacity:0;}
+  100% {opacity: 1;}
+}
+
+@keyframes fadeInTwo {
   0% { opacity:0;}
   50% { opacity:0;}
   100% {opacity: 1;}
