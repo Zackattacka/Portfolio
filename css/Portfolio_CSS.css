@@ -55,54 +55,46 @@ ul li {
 }
 
 .navbar {
-overflow: hidden;
-background-color: #333;
-position: fixed;
-top: 0;
-width: 100%;
-z-index: 300;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 300;
 }
 
 .navbar a {
-float: left;
-display: block;
-color: #f2f2f2;
-text-align: center;
-padding: 14px 16px;
-text-decoration: none;
-font-size: 17px;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
 .navbar a:hover {
-background: #ddd;
-color: black;
+  background: #ddd;
+  color: black;
 }
 .toggle, [id^=drop] {
-display: none;
+  display: none;
 }
 
 .container {
-margin-top: 110px;
-padding-bottom: 600px;
+  margin-top: 110px;
+  padding-bottom: 600px;
+  display: block;
 }
 
-.imgHolder{
-transform: rotate(270deg);
-float: left;
-margin: auto 7px;
+.responsive {
+  width: 30%;
+  height: auto;
+  display: inline-block;
 }
 
-.imgHolder img {
-flex: 1;
-}
-
-.imgHolder2 {
-  float:left;
-  margin:auto 7px;
-}
-
-.imgHolder2 img {
-  flex:1;
+.test {
+  float: left;
 }
 
 #demo {
@@ -147,12 +139,6 @@ input[type=submit]:hover {
   padding: 20px;
   top:800px;
   position: relative;
-}
-
-.disobedient_span {
-  position:relative;
-  top:470px;
-
 }
 
 .divgroup_1 {
