@@ -45,7 +45,7 @@ body {
 }
 
 .responsive_vid {
-  width: 100%;
+  width: 80%;
   height: auto;
   display: inline-block;
 }
