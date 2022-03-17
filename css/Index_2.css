@@ -19,6 +19,15 @@ h3 {
   color: black;
 }
 
+h6 {
+  text-align:center;
+  font-size:1.5vw;
+  position: relative;
+  z-index:2;
+  top:-13vw;
+  color: black;
+}
+
 .responsive {
   width: 100%;
   height: auto;
