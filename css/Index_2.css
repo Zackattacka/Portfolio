@@ -28,6 +28,10 @@ h6 {
   color: black;
 }
 
+.tap:hover {
+  transform:scale(1.5);
+}
+
 .responsive {
   width: 100%;
   height: auto;
