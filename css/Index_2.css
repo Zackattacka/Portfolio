@@ -37,10 +37,13 @@ h6 {
   height: auto;
   display: inline-block;
   transform:translateY(50%);
-  animation-name: fadeIn;
-  animation-duration:3.5s;
-  animation-fill-mode: forwards;
   text-decoration-style: none;
+}
+
+h3,
+h6 {
+  animation-name: fadeIn;
+  animation-duration:2s;
 }
 
 @keyframes fadeIn {
