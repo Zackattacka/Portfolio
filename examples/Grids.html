@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Grid Examples</title>
+    <style>
+      .block {
+        padding: 20px;
+      }
+      .block1 {
+        background-color: red;
+        grid-area:header;
+      }
+      .block2 {
+        background-color: blue;
+        color: white;
+        grid-area:nav;
+      }
+      .block3 {
+        background-color: green;
+      }
+      .block4 {
+        background-color: orange;
+      }
+      .block5 {
+        background-color: yellow;
+      }
+      .block6 {
+        background-color: purple;
+      }
+      .block7 {
+        background-color: black;
+        color: white;
+      }
+      .block8 {
+        background-color: #123524;
+        color: white;
+      }
+      .block9 {
+        background-color: grey;
+        grid-area:footer;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 400px 1fr;
+        gap: 20px 10px;
+        grid-auto-rows: minmax(100px, auto);
+        grid-template-areas:
+          "header header header"
+          "nav nav nav"
+          "sidenav content content"
+          "sidenav content content"
+          "footer footer footer";
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="block block1">1</div>
+      <div class="block block2">2</div>
+      <div class="block block3">3</div>
+      <div class="block block4">4</div>
+      <div class="block block5">5</div>
+      <div class="block block6">6</div>
+      <div class="block block7">7</div>
+      <div class="block block8">8</div>
+      <div class="block block9">9</div>
+
+    </div>
+  </body>
+</html>

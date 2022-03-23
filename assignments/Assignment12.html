@@ -52,7 +52,7 @@
       @media screen and (min-width: 480px) and (max-width: 799px) {
         aside {
           display: flex;
-          flex-direction:row;
+          flex-flow:row;
           flex-wrap: wrap;
           height: 200px;
         }
@@ -73,12 +73,19 @@
         .fakeLink {
           flex-grow:1;
         }
-        aside {
-          display; flex;
-          flex-direction: row;
+        aside .fakeLink {
+          min-width:90%;
+          max-width:100%;
         }
-        .fakeLink2 {
+        aside {
+          display:flex;
+          flex-direction:row;
+          flex-wrap:wrap;
+        }
+        aside .fakeLink2 {
           padding: 50px;
+          min-width: 33.32%;
+          max-width: 100%;
         }
       }
 
