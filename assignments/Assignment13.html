@@ -68,7 +68,7 @@
       }
 
       .item:hover {
-        background: white;
+        z-index:10;
       }
 
       .item1 {
@@ -115,6 +115,18 @@
       }
       img {
         width:100%;
+        position:relative;
+        transition: transform .3s ease;
+        border-radius: 4px;
+      }
+      img:hover {
+        transform: scale(1.5);
+        z-index:10;
+      }
+      .item4 img:hover,
+      .item8 img:hover,
+      .item12 img:hover {
+        transform-origin: right 50%;
       }
 
     </style>
