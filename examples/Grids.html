@@ -13,10 +13,10 @@
       .block2 {
         background-color: blue;
         color: white;
-        grid-area:nav;
       }
       .block3 {
         background-color: green;
+        grid-area: sidenav;
       }
       .block4 {
         background-color: orange;
@@ -46,7 +46,7 @@
         grid-auto-rows: minmax(100px, auto);
         grid-template-areas:
           "header header header"
-          "nav nav nav"
+          "sidenav nav nav"
           "sidenav content content"
           "sidenav content content"
           "footer footer footer";

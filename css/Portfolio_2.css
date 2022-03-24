@@ -16,19 +16,23 @@ hr {
 #name {
   border-bottom: solid #ffd700;
   font-size: 10vw;
-  font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   margin-top:25px;
+  text-shadow: 2px 4px 1px #468fa2;
 }
 
 #skills {
   font-size: 2.7vw;
   margin-top:-90px;
-  font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  text-shadow: 2px 2px 1px #468fa2;
 }
 
-#contact {
+navbar a .contact {
   float: right;
+  padding-right: 20px;
 }
+
 
 #grid {
   margin: 20px;
@@ -54,12 +58,13 @@ hr {
   color: #ffd700;
   font-size: 7vw;
   text-align:center;
-  font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+  text-shadow: 2px 4px 1px #468fa2;
 }
 
 a {
   color:#ffd700;
   text-decoration: none;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 a:hover {
@@ -70,7 +75,7 @@ a:hover {
   color: #ffd700;
   font-size: 4.5vw;
   text-align:center;
-  font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 .list {
@@ -78,7 +83,7 @@ a:hover {
   font-size: 2.7vw;
   list-style-type: none;
   text-align: center;
-  font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   margin-top: -60px;
 }
 .list li {
@@ -95,6 +100,7 @@ a:hover {
   width: 30%;
   height: auto;
   display: inline-block;
+  border-radius: 10px;
 }
 
 .responsive_vid {
@@ -106,6 +112,7 @@ a:hover {
   width: 50%;
   height: auto;
   display: inline-block;
+  border-radius: 10px;
 }
 
 .navbar {
@@ -118,6 +125,7 @@ a:hover {
 }
 
 .navbar a {
+  border-right: solid 4px white;
   float: left;
   display: block;
   color: #f2f2f2;
@@ -125,7 +133,7 @@ a:hover {
   padding: 20px 16px;
   text-decoration: none;
   font-size: 1.2vw;
-  font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 .navbar a:hover {
@@ -140,12 +148,16 @@ a:hover {
 .grid {
   display:grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows:minmax(10px, auto);
-  grid-column-gap: 200px;
+  grid-template-rows: 30% 30% 30% 30% 30% 30% 30%;
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
   margin: 40px;
 }
 
 .block {
+  align-items: center;
+  background: rgba(0,25,25, 0.3);
+  border-radius: 10px;
   text-align:center;
   font-size: 2vw;
   transition-duration: .4s;
