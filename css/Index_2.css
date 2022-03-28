@@ -6,7 +6,6 @@ body {
 h1 {
   text-align:center;
   font-size: 10vw;
-  border-bottom: solid #ccc 10vw;
   color: #ffd700;
 }
 
@@ -28,8 +27,18 @@ h6 {
   color: black;
 }
 
+.contain {
+  display: flex;
+  justify-content: center;
+}
+
+.tap {
+    color: 
+}
+
 .tap:hover {
   transform:scale(1.5);
+  transform-origin: top; 50%;
 }
 
 .responsive {
@@ -39,6 +48,7 @@ h6 {
   transform:translateY(50%);
   text-decoration-style: none;
 }
+
 
 h3,
 h6 {
