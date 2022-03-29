@@ -16,12 +16,12 @@ a {
 }
 
 #name {
-  text-shadow: 4px 5px #1a98b5;
+  text-shadow: 2px 3px #1a98b5;
   font-size: 6vw;
 }
 
 .enter {
-  text-shadow: 3px 3px #1a98b5;
+  text-shadow: 1.5px 1px #1a98b5;
   font-size: 5vw;
   padding-top:170px;
   text-align:center;
@@ -34,7 +34,7 @@ a {
 }
 
 .morph {
-  text-shadow: 3px 3px #1a98b5;
+  text-shadow: 1.5px 1px #1a98b5;
   font-size: 5vw;
 }
 
