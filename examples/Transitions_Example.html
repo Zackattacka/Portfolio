@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Transitions Example</title>
+    <style>
+      h1 {
+        text-align:center;
+        margin-top:50%;
+      }
+      h2 {
+        text-align:center;
+      }
+
+      h1:hover,
+      h2:hover {
+        transform: scale(1.5);
+      text-decoration: underline;
+      }
+      h1 {
+        animation: fadeIn 5s infinite ease-in-out;
+      }
+
+      h2 {
+        animation: colors 2s infinite ease-in-out;
+      }
+
+      @keyframes fadeIn {
+        0% {opacity:0;}
+        25% {opacity:1;}
+        75% {opacity:1;}
+        90% {opacity: 0;}
+        100% {opacity:0;}
+      }
+
+      @keyframes colors {
+        0% {color: red;}
+        25% {color: blue;}
+        50% {color: blue;}
+        75% {color: green;}
+        100% {color: red;}
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <h1>This is a basic animation!</h1>
+    <h2>This is a different animation!</h2>
+
+  </body>
+</html>
