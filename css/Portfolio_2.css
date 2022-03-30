@@ -9,7 +9,7 @@ body {
 
 hr {
   height: 2.5px;
-  background-color: #ffd700;
+  background-color: #e49a00;
   border:none;
 }
 
@@ -21,12 +21,6 @@ hr {
   text-shadow: 2px 4px 1px #468fa2;
 }
 
-#skills {
-  font-size: 2.7vw;
-  margin-top:-90px;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  text-shadow: 2px 2px 1px #468fa2;
-}
 
 navbar a .contact {
   float: right;
@@ -55,14 +49,14 @@ navbar a .contact {
 }
 
 .header  {
-  color: #ffd700;
+  color: #e49a00;
   font-size: 7vw;
   text-align:center;
   text-shadow: 2px 4px 1px #468fa2;
 }
 
 a {
-  color:#ffd700;
+  color:#e49a00;
   text-decoration: none;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
@@ -72,14 +66,14 @@ a:hover {
 }
 
 .header2 {
-  color: #ffd700;
+  color: #e49a00;
   font-size: 4.5vw;
   text-align:center;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 .list {
-  color: #ffd700;
+  color: #e49a00;
   font-size: 2.7vw;
   list-style-type: none;
   text-align: center;
@@ -177,6 +171,6 @@ a:hover {
 .title {
   display: flex;
   justify-content:center;
-  color: #ffd700;
+  color: #e49a00;
   font-size: 4vw;
 }
