@@ -23,10 +23,7 @@ a {
 .enter {
   text-shadow: 1.5px 1px #1a98b5;
   font-size: 5vw;
-  position: absolute;
-  top:70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .enter:hover {
@@ -38,15 +35,15 @@ a {
 .grid {
   text-shadow: 1.5px 1px #1a98b5;
   font-size: 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .cycle1 {
   animation: cycle1 10s infinite;
   position:absolute;
-  z-index:10;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  z-index: 10;
 }
 
 @keyframes cycle1 {
@@ -67,9 +64,6 @@ a {
   animation: cycle2 10s infinite;
   position:absolute;
   z-index:10;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 @keyframes cycle2 {
@@ -90,9 +84,6 @@ a {
   animation: cycle3 10s infinite;
   position:absolute;
   z-index:10;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 @keyframes cycle3 {
@@ -112,9 +103,6 @@ a {
   animation: cycle4 10s infinite;
   position:absolute;
   z-index:10;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 @keyframes cycle4 {
@@ -134,9 +122,6 @@ a {
   animation: cycle5 10s infinite;
   position:absolute;
   z-index:10;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 @keyframes cycle5 {
@@ -150,8 +135,4 @@ a {
   80% {opacity:1;}
   90% {opacity:1;}
   100% {opacity:0;}
-}
-
-@media query and {
-
 }
