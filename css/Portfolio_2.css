@@ -21,6 +21,9 @@ hr {
   text-shadow: 2px 4px 1px #468fa2;
 }
 
+.center {
+  text-align:center;
+}
 
 navbar a .contact {
   float: right;
