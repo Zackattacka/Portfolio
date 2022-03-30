@@ -15,9 +15,18 @@ a {
   align-items: center;
 }
 
+.container .grid div {
+  text-decoration:none;
+  list-style-type: none;
+  color: #e49a00;
+}
+
 #name {
   text-shadow: 2px 3px #1a98b5;
   font-size: 6vw;
+  text-decoration:none;
+  list-style-type: none;
+  color: #e49a00;
 }
 
 .enter {
@@ -36,7 +45,8 @@ a {
   text-shadow: 1.5px 1px #1a98b5;
   font-size: 5vw;
   display: flex;
-  flex-direction: column;
+  position:relative;
+  width: 100%;
   justify-content: center;
 }
 
