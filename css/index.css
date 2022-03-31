@@ -1,13 +1,13 @@
 body {
   font-family: Roboto;
-  background: #123524;
+  background: black;
   margin: 0;
 }
 
 a {
   text-decoration:none;
   list-style-type: none;
-  color: #e49a00;
+  color: #ffffff;
 }
 
 .container {
@@ -19,21 +19,23 @@ a {
 .container .grid div {
   text-decoration:none;
   list-style-type: none;
-  color: #e49a00;
+  color: #ffffff;
 }
 
 #name {
-  text-shadow: 2px 3px #1a98b5;
+  text-shadow: 2px 4px grey;
   font-size: 6.5vw;
   text-decoration:none;
   list-style-type: none;
-  color: #e49a00;
+  color: #ffffff;
+}
+
+.flex {
+  display: flex;
 }
 
 .enter {
   font-size: 7vw;
-  text-align: center;
-  margin-top: -70px;
   transition-duration: .5s;
 }
 

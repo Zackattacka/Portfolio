@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Icons</title>
+    <style media="screen">
+      .tv {
+      position: relative;
+      width: 200px;
+      height: 150px;
+      margin: 20px 0;
+      background: red;
+      border-radius: 50% / 10%;
+      color: white;
+      text-align: center;
+      text-indent: .1em;
+    }
+    .tv:before {
+      content: '';
+      position: absolute;
+      top: 10%;
+      bottom: 10%;
+      right: -5%;
+      left: -5%;
+      background: inherit;
+      border-radius: 5% / 50%;
+    }
+
+    .flex {
+      display: flex;
+      justify-content:center;
+      align-items:center;
+    }
+
+
+.curved-corner-bottomleft,
+.curved-corner-bottomright,
+.curved-corner-topleft,
+.curved-corner-topright {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  position: relative;
+}
+.curved-corner-bottomleft:before,
+.curved-corner-bottomright:before,
+.curved-corner-topleft:before,
+.curved-corner-topright:before {
+  content: "";
+  display: block;
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  border-radius: 50%;
+}
+.curved-corner-bottomleft:before {
+  bottom: 0;
+  left: 0;
+  box-shadow: -50px 50px 0 0 red;
+}
+.curved-corner-bottomright:before {
+  bottom: 0;
+  right: 0;
+  box-shadow: 50px 50px 0 0 red;
+}
+.curved-corner-topleft:before {
+  top: 0;
+  left: 0;
+  box-shadow: -50px -50px 0 0 red;
+}
+.curved-corner-topright:before {
+  top: 0;
+  right: 0;
+  box-shadow: 50px -50px 0 0 red;
+}
+
+.curvedCorners {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.four-point-star::after,
+.four-point-star::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "\2726";
+    font-size: 12rem;
+}
+
+.four-point-star::after { /* The foreground star */
+    background: linear-gradient(135deg, rgba(255,191,183,1) 20%, rgba(243,44,117,1) 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.four-point-star::before { /* The star shadow */
+    color: transparent;
+    text-shadow: 2px 3px 10px rgba(242, 96, 85, 1);
+}
+
+.four-point-star {
+    position: relative;
+}
+
+.starCenter {
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+    </style>
+  </head>
+  <body>
+    <div class="flex">
+      <div class="tv"></div>
+    </div>
+
+    
+    <div class="curvedCorners">
+      <div class="curved-corner-bottomleft"></div>
+      <div class="curved-corner-bottomright"></div>
+      <div class="curved-corner-topleft"></div>
+      <div class="curved-corner-topright"></div>
+    </div>
+
+
+    <div class="starCenter">
+      <div class="four-point-star"></div>
+    </div>
+  </body>
+</html>
