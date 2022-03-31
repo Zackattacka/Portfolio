@@ -23,15 +23,14 @@ a {
 
 #name {
   text-shadow: 2px 3px #1a98b5;
-  font-size: 6vw;
+  font-size: 6.5vw;
   text-decoration:none;
   list-style-type: none;
   color: #e49a00;
 }
 
 .enter {
-  text-shadow: 1.5px 1px #1a98b5;
-  font-size: 5vw;
+  font-size: 7vw;
   text-align: center;
 }
 
@@ -42,8 +41,7 @@ a {
 }
 
 .grid {
-  text-shadow: 1.5px 1px #1a98b5;
-  font-size: 5vw;
+  font-size: 7vw;
   display: flex;
   position:relative;
   width: 100%;
