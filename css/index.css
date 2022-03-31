@@ -32,12 +32,14 @@ a {
 .enter {
   font-size: 7vw;
   text-align: center;
+  margin-top: -70px;
+  transition-duration: .5s;
 }
 
 .enter:hover {
   text-decoration: underline ;
   transform: scale(1.5);
-  transform-origin: bottom;
+  transform-origin: bottom 10px;
 }
 
 .grid {
