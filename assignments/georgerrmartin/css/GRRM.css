@@ -1,5 +1,6 @@
 body {
   background-image: url(../images/Conc.jpg);
+  margins:0px;
 }
 
 .white {
@@ -47,6 +48,7 @@ header {
   display: flex;
   flex-direction: row;
   grid-area: header;
+  align-items: center;
 }
 
 nav {
@@ -66,7 +68,17 @@ nav ul li {
   text-align: center;
   text-transform: uppercase;
   font-family: montaga, serif;
+}
 
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  padding: 5px;
+}
+
+nav ul li a:hover {
+  background-color: grey;
+  border-radius: 10px;
 }
 
 .banner {
@@ -74,6 +86,8 @@ nav ul li {
   grid-area: banner;
   height: 300px;
   background-position: center;
+  margin-bottom: 20px;
+  repeat: no-repeat;
 }
 
 .cards {
@@ -86,24 +100,46 @@ nav ul li {
   flex:1
 }
 
+.cards #img1 {
+  padding-right: 5px;
+}
+.cards #img2 {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.cards #img3 {
+  padding-left: 5px;
+}
+
 main {
   grid-area: blog;
+  padding: 10px;
 }
 
 aside {
   grid-area: sidenav;
+  padding: 5px;
 }
 
 .nextAppearance {
   background-image: url(../images/events-bg.jpeg);
   background-position: right bottom;
   background-repeat: no-repeat;
+  padding-left: 10px;
+  padding-top: 5px;
+  margin-bottom: 5px;
+  width: 311px;
+  height: 157px;
 }
 
 .nextPublication {
 background-image: url(../images/releases-bg.jpg);
 background-position: right bottom;
 background-repeat: no-repeat;
+padding-left: 10px;
+padding-top: 5px;
+width: 311px;
+height: 246px;
 }
 
 .frame3 {
@@ -143,7 +179,28 @@ footer {
   }
 
   .cards {
+    display: flex;
     flex-direction: column;
     width: 330px;
+    justify-content: center;
+  }
+  .cards #img1 {
+    padding:0px 0px 5px 0px;
+  }
+  .cards #img2 {
+    padding:5px 0px 5px 0px;
+  }
+  .cards #img3 {
+    padding:5px 0px 0px 0px;
+  }
+
+  main {
+    display: flex;
+    flex-direction:column;
+    width: 400px;
+    justify-content:center;
+  }
+  .banner {
+    height: 30vh;
   }
 }
