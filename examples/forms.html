@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Forms</title>
+    <style media="screen">
+      #firstNameContainer label,
+      #lastNameContainer label {
+        display: block;
+      }
+      #firstNameContainer {
+        margin-bottom: 12px;
+      }
+
+      #firstNameContainer input {
+        border: 0;
+        border-bottom: 2px dashed red;
+        padding: 12px;
+      }
+
+      #firstNameContainer input:focus-visible {
+        outline: 5px solid blue;
+      }
+
+      #lastNameContainer input {
+        background-color: skyblue;
+        border: 0;
+        padding: 12px;
+        border-radius: 4px;
+      }
+
+      textarea {
+        font-family: apple chancery;
+        font-size: 12px;
+        width: 500px;
+      }
+
+      #buttonContainer input[type=button] {
+        border: 1px solid black;
+        border-radius:6px;
+        padding:12px;
+        cursor: pointer;
+        margin-right: 12px;
+      }
+
+      #buttonContainer input[type=button]:focus-visible {
+        outline: 0;
+      }
+
+      #buttonContainer input[type=reset] {
+        background: linear-gradient(to bottom, white, grey);
+        border: 1px solid black;
+        border-radius: 6px;
+        cursor: pointer;
+        padding:12px;
+        margin-right: 12px;
+      }
+
+      #buttonContainer input[type=reset]:active {
+        background: linear-gradient(to bottom, grey, white);
+      }
+
+      #buttonContainer input[type=submit] {
+        background: linear-gradient(to bottom, skyblue, teal);
+        border: 0;
+        border-radius: 8px;
+        curser: pointer;
+        padding: 12px 48px;
+      }
+
+      #buttonContainer input[type=submit]:active {
+        background: linear-gradient(to bottom, teal, skyblue);
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Forms:</h1>
+    <hr>
+
+    <form>
+      <fieldset>
+        <fieldset>
+          <h2>Text Inputs</h2>
+
+          <div id="firstNameContainer">
+            <label for="firstNameInput">First Name:</label>
+            <input id="firstNameInput" type="text" name="firstName">
+          </div>
+
+          <br />
+
+          <div id="lastNameContainer">
+            <label for="lastNameInput">Last Name:</label>
+            <input id="lastNameInput" type="text" name="lastName">
+          </div>
+        </fieldset>
+
+        <br />
+
+        <fieldset>
+          <h2>Text Area Inputs</h2>
+
+          <div>
+            <label for="codeFeelingsId">How Do You Feel About Programming?</label>
+            <br />
+            <textarea id="codeFeelingsId" rows="5" cols="30"></textarea>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <h2>Radio Inputs</h2>
+
+          <fieldset>
+            <legend>What Program Are You Enrolled In?</legend>
+            <div>
+              <input id="raspRadio" type="radio" name="Program" value="RASP">
+              <label for="raspRadio">Recording Arts and Show Production</label>
+            </div>
+
+            <div>
+              <input id="dfvpRadio" type="radio" name="Program" value="DVFP">
+              <label for="dfvpRadio">Digital Filmmaking and Video Production</label>
+            </div>
+
+            <div>
+              <input id="gdwdRadio" type="radio" name="Program" value="GDWD">
+              <label for="gdwdRadio">Graphic Design and Web Development</label>
+            </div>
+            </fieldset>
+        </fieldset>
+
+        <fieldset>
+          <h2>Checkbox Inputs</h2>
+
+          <p>How do you get to class?</p>
+
+          <div>
+            <input
+            type="checkbox"
+            id="bikeCheckBox"
+            name="vehicleOption1"
+            value="bike">
+            <label for="bikeCheckBox">Bike</label>
+          </div>
+
+          <div>
+            <input
+            type="checkbox"
+            id="busCheckBox"
+            name="vehicleOption2"
+            value="bus">
+            <label for="busCheckBox">Bus</label>
+          </div>
+
+          <div>
+            <input
+            type="checkbox"
+            id="carCheckBox"
+            name="vehicleOption3"
+            value="car">
+            <label for="carCheckBox">Car</label>
+          </div>
+
+          <div>
+            <input
+            type="checkbox"
+            id="bedCheckBox"
+            name="vehicleOption4"
+            value="car">
+            <label for="bedCheckBox">Stay in Bed</label>
+          </div>
+
+          <div>
+            <input
+            type="checkbox"
+            id="airCheckBox"
+            name="vehicleOption5"
+            value="air">
+            <label for="airCheckBox">Airdropped Like Fortnite</label>
+          </div>
+        </fieldset>
+
+        <br />
+
+        <fieldset>
+          <h2>Date Picker</h2>
+
+          <div id="date">
+            <label for="dateId">What is your birthday?</label>
+            <input id ="dateId" type="date" name="bday">
+          </div>
+
+
+          <div>
+            <h2>Dropdown (Select Inputs)</h2>
+            <br />
+            <label for="dropDown">What is your favorite food?</label>
+            <select id="dropDown" name="food">
+              <option value="">--Select an Option--</option>
+              <option value="apple">Apple</option>
+              <option value="Banana">Banana</option>
+              <option value="Burger">Burger</option>
+              <option value="Nachos">Nachos</option>
+              <option value="hotSauce">Straight up hot sauce</option>
+            </select>
+          </div>
+        </fieldset>
+
+
+        <h2>Button Inputs</h2>
+
+        <br />
+
+        <div id="buttonContainer">
+          <input type="button" value="Button">
+          <input type="reset" value="Reset">
+          <input type="submit" value="Submit">
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
