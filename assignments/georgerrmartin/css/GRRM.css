@@ -1,6 +1,11 @@
 body {
   background-image: url(../images/Conc.jpg);
-  margins:0px;
+}
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box
 }
 
 .white {
@@ -87,7 +92,8 @@ nav ul li a:hover {
   height: 300px;
   background-position: center;
   margin-bottom: 20px;
-  repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .cards {
@@ -116,8 +122,15 @@ main {
   padding: 10px;
 }
 
+main a {
+  text-decoration: none;
+  color: darkblue;
+}
+
 aside {
   grid-area: sidenav;
+  display: flex;
+  flex-direction: column;
   padding: 5px;
 }
 
@@ -126,10 +139,13 @@ aside {
   background-position: right bottom;
   background-repeat: no-repeat;
   padding-left: 10px;
-  padding-top: 5px;
+  padding-top: 15px;
   margin-bottom: 5px;
   width: 311px;
   height: 157px;
+}
+.nextAppearance img {
+  margin-top: 10px;
 }
 
 .nextPublication {
@@ -137,52 +153,93 @@ background-image: url(../images/releases-bg.jpg);
 background-position: right bottom;
 background-repeat: no-repeat;
 padding-left: 10px;
-padding-top: 5px;
+padding-top: 15px;
 width: 311px;
 height: 246px;
 }
+.nextPublication img {
+  margin-top: 10px;
+}
 
-.frame3 {
-  background-image: url(../images/valyrian-steel-v3.jpeg);
+.valyrianSteel {
+  background-image: url(../images/steel-v3.jpeg);
   background-position: right bottom;
   background-repeat: no-repeat;
+  padding-left: 5px;
+  padding-top: 5px;
+  width: 311px;
+  height: 246px;
+}
+
+.stagecoach {
+  background-image: url(../images/stagecoach.jpeg);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  padding-left: 5px;
+  padding-top: 5px;
+  width: 311px;
+  height: 246px;
 }
 
 footer {
-  grid-area: footer;
-}
-
-.bottom {
   background-image: url(../images/footer-bg.jpg);
+  grid-area: footer;
   height: 120px;
   background-position: center top;
   background-repeat: no-repeat;
   grid-area: bottom;
+
+}
+
+.bottom {
+  text-align:center;
+
 }
 
 @media only screen and (max-width: 1000px) {
   .grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 10px 1fr 10px;
     grid-template-areas:
-    "header"
-    "nav"
-    "banner"
-    "cards"
-    "blog"
-    "sidenav"
-    "footer"
-    "bottom";
+    ". header ."
+    ". nav ."
+    ". banner ."
+    ". blog ."
+    ". cards ."
+    ". sidenav ."
+    ". footer ."
+    ". bottom .";
+  }
+
+  body {
+    max-width:1000px;
+
+  }
+
+  header {
+    max-width: 1000px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  #social {
+    display: flex;
+    flex-direction:column;
   }
 
   nav ul {
     flex-direction: column;
+    font-size: 20px;
   }
 
   .cards {
     display: flex;
     flex-direction: column;
-    width: 330px;
+    max-width: 330px;
+    margin-right: auto;
+    margin-left: auto;
     justify-content: center;
+    background-color: grey;
+    background-size: contain;
   }
   .cards #img1 {
     padding:0px 0px 5px 0px;
@@ -194,13 +251,81 @@ footer {
     padding:5px 0px 0px 0px;
   }
 
+
+  aside {
+    grid-area: footer;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+
   main {
     display: flex;
     flex-direction:column;
-    width: 400px;
-    justify-content:center;
+    flex:1;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right:auto;
   }
-  .banner {
-    height: 30vh;
+
+  .banner img {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right:auto;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .grid {
+    max-width: 480px;
+  }
+  body {
+    max-width: 480px;
+    margin:0;
+  }
+  .flex1 {
+    justify-content: center;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+  }
+
+  #social {
+    display: flex;
+    flex-direction:row;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    max-width: 330px;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    background-color: grey;
+    background-size: contain;
+  }
+
+  .cards #img1 {
+    padding:0px 0px 5px 0px;
+  }
+  .cards #img2 {
+    padding:5px 0px 5px 0px;
+  }
+  .cards #img3 {
+    padding:5px 0px 0px 0px;
+  }
+
+  .flex1 a {
+    flex-direction: column;
+  }
+
+  h1 {
+    text-align: center;
+    max-width:150px;
   }
 }
