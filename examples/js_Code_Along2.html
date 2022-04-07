@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Javascrip Code Along</title>
+    <style media="screen">
+      #button1 {
+        display: block;
+        margin-left: auto;
+        margin-right:auto;
+        margin-top:50%;
+        height: 50px;
+        width: 100px;
+      }
+      #colorButton {
+        display: block;
+        margin-left: auto;
+        margin-right:auto;
+        height: 50px;
+        width: 100px;
+    </style>
+
+  </head>
+  <body>
+    <input type="button" id="button1" value="Click">
+    <input type="button" id="colorButton" value="Click To Change Color">
+
+
+
+    <script type="text/javascript">
+      let greeting = 'Hello World';
+
+      function logText(textToLog) {
+        console.log(textToLog);
+        //alert(textToLog);
+      }
+
+      logText(greeting);
+      logText('How are you doing?');
+      logText('Are you sure?');
+
+      let button1 = document.getElementById('button1');
+      button1.onclick = () => {
+        logText(button1.id);
+      };
+
+      function getRandomNumberBetween(lowValue, highValue) {
+        let range = highValue - lowValue;
+        let randomRangeValue = Math.random() * range;
+        return Math.floor(lowValue + randomRangeValue);
+      }
+
+      function setRandomBackgroundColor() {
+        let body = document.getElementsByTagName('body')[0];
+        let r = getRandomNumberBetween(0, 255);
+        let g = getRandomNumberBetween(0, 255);
+        let b = getRandomNumberBetween(0, 255);
+
+        let colorValue = `rgb(${r}, ${g}, ${b})`;
+        body.style.backgroundColor =
+        `rgb(${r}, ${g}, ${b})`;
+        logText(colorValue);
+      }
+
+      let colorButton = document.getElementById('colorButton');
+      colorButton.onclick = setRandomBackgroundColor;
+
+    </script>
+  </body>
+</html>
