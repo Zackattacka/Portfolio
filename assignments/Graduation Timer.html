@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Countdown</title>
+    <style media="screen">
+
+      body {
+        background-color: white;
+        margin: 0;
+      }
+
+      #hero {
+        align-items: center;
+        background-color: #123456;
+        color: white;
+        display: flex;
+        font-family: roboto;
+        height: 70px;
+        justify-content: center;
+      }
+
+      #lowerHero {
+        align-items: center;
+        background-color: #123456;
+        color: white;
+        display: flex;
+        flex-direction:column;
+        font-family: roboto;
+        height: 130px;
+        justify-content: center;
+      }
+
+      #countdown {
+        display: inline-block;
+      }
+
+      p {
+        text-align:center;
+      }
+
+      #responsive {
+        border-radius: 10px;
+        width: 50%;
+        height: auto;
+        display: inline-block;
+      }
+
+    </style>
+  </head>
+  <body>
+    <p><img src="images/Graduation_Countdown/Logo.png" alt="Pencil Logo"></p>
+
+    <div id="lowerHero">
+      <h1 id="name">Zac Vetter:</h1>
+      <h2 id="program">F.I.R.S.T. Institute Graduation Countdown</h2>
+    </div>
+
+    <p><img id="responsive" src="images/Graduation_Countdown/Beo1.jpg" alt="Beo and Cloud Double Exposure"></p>
+
+    <div id="hero">
+      <h1 id="countdown">Placeholder</h1>
+    </div>
+
+    <script type="text/javascript">
+
+      let deadline = new Date('July 22, 2022 16:30:00');
+
+      function setCountdown() {
+        let now = new Date();
+
+        // # of milliseconds between now and deadline
+        let timeLeft = deadline.getTime() - now.getTime();
+
+        let days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        let hours = Math.floor(
+        (timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        var minutes = Math.floor(
+        (timeLeft % (1000 * 60 * 60)) / (1000 * 60)
+        );
+        var seconds = Math.floor(
+        (timeLeft % (1000 * 60)) / 1000
+        );
+
+        document.getElementById('countdown').innerHTML =
+        days + 'd ' + hours + 'h ' + minutes + 'm '
+        + seconds + 's ';
+      }
+
+      setInterval(setCountdown, 1000);
+
+    </script>
+  </body>
+</html>
