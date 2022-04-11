@@ -1,5 +1,5 @@
 html {
-  background: #123524;
+  background: grey;
   scroll-behavior: smooth;
 }
 
@@ -9,12 +9,12 @@ body {
 
 hr {
   height: 2.5px;
-  background-color: #e49a00;
+  background-color: white;
   border:none;
 }
 
 #name {
-  border-bottom: solid #ffd700;
+  border-bottom: solid white;
   font-size: 10vw;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   margin-top:25px;
@@ -52,16 +52,16 @@ navbar a .contact {
 }
 
 .header  {
-  color: #e49a00;
+  color: white;
   font-size: 7vw;
   text-align:center;
-  text-shadow: 2px 4px 1px #468fa2;
+  text-shadow: 2px 4px black;
 }
 
 a {
-  color:#e49a00;
+  color:white;
   text-decoration: none;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: roboto;
 }
 
 a:hover {
@@ -69,18 +69,19 @@ a:hover {
 }
 
 .header2 {
-  color: #e49a00;
+  color: white;
+  text-shadow: 2px 4px black;
   font-size: 4.5vw;
   text-align:center;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 .list {
-  color: #e49a00;
+  color: white;
   font-size: 2.7vw;
   list-style-type: none;
   text-align: center;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: roboto;
   margin-top: -60px;
 }
 .list li {
@@ -130,7 +131,7 @@ a:hover {
   padding: 20px 16px;
   text-decoration: none;
   font-size: 1.2vw;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: roboto;
 }
 
 .navbar a:hover {
@@ -174,6 +175,7 @@ a:hover {
 .title {
   display: flex;
   justify-content:center;
-  color: #e49a00;
+  color: white;
+  text-shadow: 2px 4px black;
   font-size: 4vw;
 }

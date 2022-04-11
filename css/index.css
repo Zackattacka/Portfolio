@@ -1,6 +1,6 @@
 body {
   font-family: Roboto;
-  background: black;
+  background: grey;
   margin: 0;
 }
 
@@ -8,6 +8,7 @@ a {
   text-decoration:none;
   list-style-type: none;
   color: #ffffff;
+  text-shadow: 2px 4px black;
 }
 
 .container {
@@ -23,7 +24,7 @@ a {
 }
 
 #name {
-  text-shadow: 2px 4px grey;
+  text-shadow: 2px 4px black;
   font-size: 6.5vw;
   text-decoration:none;
   list-style-type: none;
@@ -51,6 +52,7 @@ a {
   position:relative;
   width: 100%;
   justify-content: center;
+  text-shadow: 2px 4px black;
 }
 
 .cycle1 {
