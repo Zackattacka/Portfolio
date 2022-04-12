@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Slideshow</title>
+    <link rel="stylesheet" href="css/slideshow.css">
+  </head>
+  <body>
+
+
+    <div id="slideshow">
+      <img class="slideshowImage" id="slide1" src="../images/Film_Photos1/Film_Photos1.jpg" alt="Beo Fence">
+      <img class="slideshowImage" id="slide2" src="../images/Film_Photos1/Film_Photos20.jpg" alt="Beo Look">
+      <img class="slideshowImage" id="slide3" src="../images/Film_Photos1/Film_Photos9.jpg" alt="Beo Fence Again">
+      <img class="slideshowImage" id="slide4" src="../images/Film_Photos1/Film_Photos16.jpg" alt="Beo Sleepy">
+    </div>
+
+    <input
+      type="button"
+      id="previous"
+      value="Previous"
+      onClick="showPreviousSlide()">
+
+    <input
+      type="button"
+      id="next"
+      value="Next"
+      onClick="showNextSlide()">
+
+
+    <script type="text/javascript" src="js/Slideshow.js"></script>
+  </body>
+</html>
