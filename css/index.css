@@ -1,6 +1,6 @@
 body {
   font-family: Roboto;
-  background: grey;
+  background: #102035;
   margin: 0;
 }
 
@@ -15,6 +15,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .container .grid div {
@@ -150,4 +151,16 @@ a {
   80% {opacity:1;}
   90% {opacity:1;}
   100% {opacity:0;}
+}
+
+@media screen and (max-width: 1000px) and (orientation: portrait) {
+  .container {
+    transform: translate(0%, 50%);
+  }
+}
+
+@media screen and (max-width: 1000px) and (orientation: landscape) {
+  .container {
+    transform: translate(0%, -15%);
+  }
 }

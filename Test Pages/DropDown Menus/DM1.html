@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous">
+    </script>
+
+
+    <style media="screen">
+
+      body {
+        background: rgba(255, 200, 50, .8);
+      }
+
+      h1 {
+        margin: 50px 0;
+        font-size: 50px;
+        font-weight: 100;
+        text-align: center;
+        font-family: "Open Sans";
+      }
+
+      ul {
+        width: 620px;
+        margin: 0 auto;
+      }
+
+      ul li {
+        float: left;
+        list-style: none;
+        margin-right: 10px;
+        position: relative;
+      }
+
+      ul li a {
+        font: 700 15px Open Sans;
+        text-transform: uppercase;
+        position: relative;
+        color: #333333;
+        text-decoration: none;
+        border: 3px solid #000000;
+        letter-spacing: 1px;
+        padding: 10px 15px 10px 25px;
+        display: block;
+        width: 150px;
+        z-index: 5;
+      }
+
+      ul li a i {
+        font-size: 12px;
+        position: absolute;
+        right: 10px;
+        top: 14px;
+      }
+
+      ul li .drop-down {
+        position: absolute;
+        padding: 0;
+        display: none;
+        margin: 0;
+        left: 0;
+        z-index: 0;
+      }
+      ul li .drop-down li {
+        position: relative;
+        float: none;
+      }
+      ul li .drop-down li a {
+        border-top: none;
+        width: 150px;
+      }
+      ul li .drop-down li a:hover {
+        background: #000000;
+        color: #ffffff;
+      }
+      ul li .drop-down li:nth-of-type(1) a {
+        border-top: none;
+      }
+
+      .accent {
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background: #000;
+        position: absolute;
+        transition: 0.3s ease;
+      }
+
+      .animate {
+        width: 100%;
+        transition: 0.3s ease;
+      }
+
+      .item:hover {
+        color: #ffffff;
+      }
+    </style>
+
+
+  </head>
+  <body>
+
+
+    <h1>Mock Portfolio</h1>
+
+    <ul>
+      <li><a href="#" class="item">Skills <i class="fa fa-chevron-down"></i></a>
+        <span class="accent"></span>
+        <ul class="drop-down">
+          <li><a href="#">Photography</a></li>
+          <li><a href="#">Graphic Design</a></li>
+          <li><a href="#">Videography</a></li>
+          <li><a href="#">Audio Production</a></li>
+        </ul>
+      </li>
+      <li><a href="#" class="item">Projects <i class="fa fa-chevron-down"></i></a>
+        <span class="accent"></span>
+        <ul class="drop-down">
+          <li><a href="#">The Caller</a></li>
+          <li><a href="#">Unnamed Animation</a></li>
+          <li><a href="#">Nikon F5</a></li>
+          <li><a href="#">Purple Noon</a></li>
+        </ul>
+      </li>
+      <li><a href="#" class="item">Contact <i class="fa fa-chevron-down"></i></a>
+        <span class="accent"></span>
+        <ul class="drop-down">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Email</a></li>
+        </ul>
+      </li>
+    </ul>
+
+
+    <script type="text/javascript">
+
+
+      $("li").mouseover(function(){
+       $(this).find('.drop-down').slideDown(300);
+       $(this).find(".accent").addClass("animate");
+       $(this).find(".item").css("color","#FFF");
+      }).mouseleave(function(){
+        $(this).find(".drop-down").slideUp(300);
+         $(this).find(".accent").removeClass("animate");
+         $(this).find(".item").css("color","#000");
+      });
+
+
+    </script>
+
+
+  </body>
+</html>

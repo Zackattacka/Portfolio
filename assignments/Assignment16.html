@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Assignment 16: Modal/Popup</title>
+
+    <style media="screen">
+      * {
+        box-sizing: border-box;
+      }
+
+      h1 {
+        text-align:center;
+        font-family: roboto;
+        padding-top: 50px;
+      }
+
+      p {
+        padding: 50px;
+        text-align: center;
+      }
+
+      #popupContainer {
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #popupContainer.popupOpen {
+        display: flex;
+      }
+
+      #popupBackground {
+        background-color: rgba(0, 130, 130, .8);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 0;
+      }
+
+      #popup {
+        position: relative;
+        z-index: 1;
+        border: 3px solid black;
+        border-radius: 24px;
+        padding: 20px;
+        background-color: white;
+        min-width: 400px;
+        text-align: center;
+      }
+
+      .popupTrigger:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+
+      .popupTrigger {
+        transition-duration: .3s;
+        display: flex;
+        justify-content: center;
+      }
+
+      #popup .closePopup {
+        margin-top: 10px;
+        font-size: 24px;
+      }
+
+      .closePopup {
+        transition-duration .3s;
+      }
+
+      .closePopup:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+
+    </style>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous">
+    </script>
+
+  </head>
+  <body>
+
+    <h1>Something Something <br>JQuery..</h1>
+
+    <p>Now <b>THIS</b> is podracing!</p>
+    <div class="popupTrigger">Open Popup</div>
+    <div id="popupContainer">
+      <div id="popupBackground" class="closePopup"></div>
+      <div id="popup"><div class="closePopup">Go Away!</div></div>
+    </div>
+
+    <script type="text/javascript">
+
+      $('.popupTrigger').click(
+        function() {
+          $('#popupContainer').addClass('popupOpen');
+        }
+      );
+
+      $('.closePopup').click(
+        function() {
+          $('#popupContainer').removeClass('popupOpen');
+        }
+      );
+
+    </script>
+
+  </body>
+</html>
