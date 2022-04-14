@@ -13,20 +13,9 @@ hr {
   border:none;
 }
 
-a {
-  text-decoration:none;
-  list-style-type: none;
-  color: #ffffff;
-  font-family: roboto;
-  font-size: 3vw;
-}
 
 h3 {
   margin-top: -20px;
-}
-
-a:hover {
-  text-decoration:underline;
 }
 
 

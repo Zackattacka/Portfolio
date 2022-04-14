@@ -1,0 +1,122 @@
+h1 {
+  margin: 50px 0;
+  font-size: 50px;
+  font-weight: 100;
+  text-align: center;
+  font-family: "Open Sans";
+}
+
+ul {
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul li {
+  float: left;
+  list-style: none;
+  margin-right: 10px;
+  position: relative;
+}
+
+ul li a {
+  font: 700 15px Open Sans;
+  text-transform: uppercase;
+  position: relative;
+  color: white;
+  text-decoration: none;
+  border: 3px solid #ffffff;
+  letter-spacing: 1px;
+  padding: 30px 35px 30px 35px;
+  display: block;
+  width: 150px;
+  z-index: 5;
+}
+
+ul li a i {
+  font-size: 12px;
+  position: absolute;
+  right: 10px;
+  top: 14px;
+}
+
+ul li .drop-down {
+  position: absolute;
+  padding: 0;
+  display: none;
+  margin: 0;
+  left: 0;
+  z-index: 0;
+}
+ul li .drop-down li {
+  position: relative;
+  float: none;
+}
+ul li .drop-down li a {
+  border-top: none;
+  width: 150px;
+}
+ul li .drop-down li a:hover {
+  background: #ffffff;
+  color: #000000;
+}
+ul li .drop-down li:nth-of-type(1) a {
+  border-top: none;
+}
+
+#menu {
+  position: relative;
+  top: 100px;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.accent {
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: #ffffff;
+  position: absolute;
+  transition: 0.3s ease;
+}
+
+.animate {
+  width: 100%;
+  transition: 0.3s ease;
+}
+
+.item:hover {
+  color: #ffffff;
+}
+
+
+@media screen and (max-width: 850px) {
+  ul {
+    width: auto;
+  }
+  ul li a {
+    padding: 10px 15px 15px 25px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  ul li a {
+    padding: 5px 10px 10px 10px;
+  }
+
+  #menu {
+    flex-direction: column;
+  }
+
+  ul li {
+    margin-right: auto;
+  }
+
+  ul li .drop-down {
+    left: 175px;
+    top: -1px;
+    border-top: 3px solid #ffffff;
+  }
+}
