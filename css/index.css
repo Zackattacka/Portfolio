@@ -17,7 +17,7 @@ a {
   align-items: center;
   justify-content: center;
   position: relative;
-  top: -100px;
+  top: -200px;
 }
 
 .container .grid div {
@@ -253,9 +253,17 @@ a {
   margin: 20px;
 }
 
+@media screen and (max-width: 1750px) {
+  .container {
+    top: -100px;
+  }
+}
+
+
 @media screen and (max-width: 1000px) and (orientation: portrait) {
   .container {
     transform: translate(0%, 20%);
+    top: -100px;
   }
   #shapes {
     display: flex;
