@@ -49,11 +49,11 @@
     <script type="text/javascript">
 
       $("li").mouseover(function(){
-       $(this).find('.drop-down').slideDown(300);
+       $(this).find('.drop-down').stop().slideDown(300);
        $(this).find(".accent").addClass("animate");
        $(this).find(".item").css("color","#000");
       }).mouseleave(function(){
-        $(this).find(".drop-down").slideUp(200);
+        $(this).find(".drop-down").stop().slideUp(200);
          $(this).find(".accent").removeClass("animate");
          $(this).find(".item").css("color","#fff");
       });
