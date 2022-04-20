@@ -41,24 +41,57 @@
         text-decoration: none;
       }
 
+      #eButton {
+        display: none;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #eButton a {
+        width: 300px;
+        height: 70px;
+        font-size: 30px;
+        color: #11ff33;
+        font-family: courier;
+      }
+
     </style>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous">
+    </script>
+
   </head>
 
 
 
   <body onload="typeWriter()">
 
+    <!--Header-->
     <a href="Portfolio/Portfolio.html">
       <div id="header" class="container-fluid bg-dark text-white">
         <div class="row">
           <div class="col text-center"><h1>Zac Vetter</h1></div>
         </div>
       </div>
+    <!--Header-->
 
+      <!--Typewriter Text Area-->
       <div class="container">
         <p id="typeWriter"></p>
       </div>
     </a>
+      <!--Typewriter Text Area-->
+
+
+    <!-- Enter Button -->
+    <div id="eButton" class="text-center">
+      <a href="Portfolio/Portfolio.html" type="button" class="btn bg-dark text-center">Enter..</a>
+    </div>
+    <!-- Enter Button -->
+
 
 
 
@@ -67,9 +100,9 @@
     <script type="text/javascript">
 
 
-
+      // Typewriter
       var i = 0;
-      var txt = `Photography \n \n Graphic Design \n \n Web Development \n \n Videography \n \n Audio Production \n \n \n \n ENTER...`;
+      var txt = `Photography \n \n Graphic Design \n \n Web Development \n \n Videography \n \n Audio Production \n \n`;
       var speed = 50;
 
       function typeWriter() {
@@ -80,6 +113,14 @@
           setTimeout(typeWriter, speed);
         }
       }
+      //Typewriter
+
+
+      //Text Fade in
+      $(document).ready(function() {
+        $('#eButton').delay(5000).fadeIn('slow');
+      });
+      //Text Fade in
 
 
     </script>

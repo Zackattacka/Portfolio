@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact</title>
+    <style>
+
+      body {
+        font-family: "Open sans";
+        background: #102035;
+        margin:0;
+      }
+
+      input[type=text],
+      select,
+      textarea {
+        width: 100%;
+        padding:12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+
+      input[type=submit] {
+        background-color: #ccc;
+        color: #123524;
+        margin-left: 20px;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        curser: pointer;
+        transition: transform(.2s);
+      }
+
+      input[type=submit]:hover {
+        transform: scale(1.2);
+        background-color: #ffd700
+      }
+
+      .container {
+        border-radius: 5px;
+        border: 2px solid white;
+        background-color: rgba(50, 50, 80, 0.35);
+        padding: 20px;
+        margin: 20px;
+      }
+
+      h1 {
+        color: #ffffff;
+        text-shadow: 2px 4px black;
+        font-size: 10vw;
+        font-family: roboto;
+        text-align:center;
+        border-bottom: solid #ccc;
+        font-size: 15vw;
+      }
+      label {
+        color: #ffffff;
+      }
+
+      .responsive {
+        width: 100%;
+        height: auto;
+        display: inline-block;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <h1 class="responsive">Contact</h1>
+
+    <div class="container">
+      <form action="action_page">
+
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstName" placeholder="First name..">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastName" placeholder="Last name..">
+
+        <label for="pnum">Contact Phone Number</label>
+        <input type="text" id="pnum" name="phoneNumber" placeholder="Phone Number..">
+
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Subject.." style="height:200px;"></textarea>
+
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </body>
+</html>
