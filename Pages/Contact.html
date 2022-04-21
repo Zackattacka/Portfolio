@@ -36,6 +36,46 @@
         padding-bottom: 10px;
       }
 
+      #contactForm {
+        display: flex;
+        justify-content: center;
+        padding-top: 60px;
+      }
+      #contactReason {
+        display: flex;
+        justify-content: center;
+        padding-top: 60px;
+      }
+      #email {
+        display: flex;
+        justify-content: center;
+        padding-top: 60px;
+      }
+
+      #nameButton {
+        padding: 10px;
+        border-radius: 8px;
+      }
+      #reasonButton {
+        padding: 10px;
+        border-radius: 8px;
+      }
+      #emailButton {
+        padding: 10px;
+        border-radius: 8px;
+      }
+
+      #submit {
+        padding: 10px;
+        border-radius: 8px;
+      }
+
+      #submitButton {
+        display: flex;
+        justify-content: center;
+        padding-top: 60px;
+      }
+
     </style>
   </head>
   <body>
@@ -86,7 +126,26 @@
 
 
     <!-- Contact Form -->
-    
+    <form id="center">
+      <div id="contactForm" class="form-group">
+        <label for="Name" id="nameButton" class="bg-dark text-white">Name: </label>
+        <input type="text" id="name"></input>
+      </div>
+
+      <div id="contactReason" class="form-group">
+        <label for="reason" id="reasonButton" class="bg-dark text-white">Contact Reason</label>
+        <input type="text" id="reason"></input>
+      </div>
+
+      <div id="email" class="form-group">
+        <label for="email" id="emailButton" class="bg-dark text-white">Contact Email</label>
+        <input type="text" id="email"></input>
+      </div>
+      <div id="submitButton">
+        <input type="submit" id="submit" value="Submit" class="bg-dark text-white"></input>
+      </div>
+
+    </form>
     <!-- Contact Form -->
 
 
