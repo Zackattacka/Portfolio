@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>Contact</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <style media="screen">
+      body {
+        background-color: #292b2c;
+      }
+
+      #gallery-carousel {
+        max-width: 50%;
+        margin:auto;
+      }
+
+      ul li a {
+        border-radius: 4px;
+      }
+      ul li a:hover {
+        background-color: grey;
+        border-radius: 4px;
+      }
+
+      section {
+
+      }
+
+      h3 {
+        padding-bottom: 10px;
+      }
+
+      #contactForm {
+        display: flex;
+        justify-content: center;
+        padding-top: 60px;
+      }
+      #contactReason {
+        display: flex;
+        justify-content: center;
+        padding-top: 60px;
+      }
+      #email {
+        display: flex;
+        justify-content: center;
+        padding-top: 60px;
+      }
+
+      #nameButton {
+        padding: 10px;
+        border-radius: 8px;
+      }
+      #reasonButton {
+        padding: 10px;
+        border-radius: 8px;
+      }
+      #emailButton {
+        padding: 10px;
+        border-radius: 8px;
+      }
+
+      #submit {
+        padding: 10px;
+        border-radius: 8px;
+      }
+
+      #submitButton {
+        display: flex;
+        justify-content: center;
+        padding-top: 60px;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <!-- Nav Bar -->
+    <div class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../Portfolio/Portfolio.html">Zac Vetter</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="navbarNav" class="collapse navbar-collapse">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../Portfolio/Portfolio.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Photography.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="Video.html">Video</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="About_Me.html">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Nav Bar -->
+
+
+    <!-- Header -->
+    <div class="container-fluid bg-dark text-white">
+      <div class="row">
+        <div class="col text-center"><h1>Zac Vetter</h1></div>
+      </div>
+      <div class="row">
+        <div class="col text-center"><h3>Contact</h3></div>
+      </div>
+    </div>
+    <!-- Header -->
+
+
+    <!-- Contact Form -->
+    <form id="center">
+      <div id="contactForm" class="form-group">
+        <label for="Name" id="nameButton" class="bg-dark text-white">Name: </label>
+        <input type="text" id="name"></input>
+      </div>
+
+      <div id="contactReason" class="form-group">
+        <label for="reason" id="reasonButton" class="bg-dark text-white">Contact Reason</label>
+        <input type="text" id="reason"></input>
+      </div>
+
+      <div id="email" class="form-group">
+        <label for="email" id="emailButton" class="bg-dark text-white">Contact Email</label>
+        <input type="text" id="email"></input>
+      </div>
+      <div id="submitButton">
+        <input type="submit" id="submit" value="Submit" class="bg-dark text-white"></input>
+      </div>
+
+    </form>
+    <!-- Contact Form -->
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>
