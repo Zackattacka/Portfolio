@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      * {
+        margin: 0;
+        background-color: rgba(50, 50, 50, 1);
+      }
+
+      #grid {
+        display: grid;
+        margin-top: 20px;
+        gap: 5px;
+        grid-template-areas:
+        "header header header"
+        "section article1 article1"
+        "section2 article2 article2"
+        "footer footer footer"
+      }
+
+      .grid-item-1 {
+        grid-area: header;
+        height: 50px;
+        border: 2px black solid;
+        text-align: center;
+        background-color: white;
+      }
+
+      .grid-item-2 {
+        grid-area: section;
+        height: 50px;
+        border: 2px black solid;
+        background-color: lightgreen;
+        text-align: center;
+      }
+
+      .grid-item-3 {
+        height: 50px;
+        grid-area: section2;
+        border: 2px black solid;
+        background-color: lightblue;
+        text-align: center;
+      }
+
+      .grid-item-4 {
+        height: 50px;
+        grid-area: article1;
+        border: 2px black solid;
+        background-color: grey;
+        text-align: center;
+      }
+
+      .grid-item-5 {
+        height: 50px;
+        grid-area: article2;
+        border: 2px black solid;
+        background-color: grey;
+        text-align: center;
+      }
+
+      .grid-item-6 {
+        height: 50px;
+        grid-area: footer;
+        border: 2px black solid;
+        background-color: yellow;
+        text-align: center;
+      }
+
+    </style>
+  </head>
+  <body>
+
+
+    <div id="grid"</div>
+      <div class="grid-item-1">Gallery</div>
+      <div class="grid-item-2">2</div>
+      <div class="grid-item-3">3</div>
+      <div class="grid-item-4">4</div>
+      <div class="grid-item-5">5</div>
+      <div class="grid-item-6">6</div>
+
+  </body>
+</html>
